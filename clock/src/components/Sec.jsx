@@ -4,7 +4,7 @@ class Sec extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="hand sec-hand" />
+        <div className="hand sec-hand">{this.props.sec}</div>
       </React.Fragment>
     );
   }
