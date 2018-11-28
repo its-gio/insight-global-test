@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
+import Hour from "./components/Hour";
+import Min from "./components/Min";
+import Sec from "./components/Sec";
 
 class App extends Component {
   render() {
     return (
-      <div class="clock">
-        <div class="clock-face">
-          <div class="hand hour-hand" />
-          <div class="hand min-hand" />
-          <div class="hand second-hand" />
+      <div className="clock">
+        <div className="clock-face">
+          <Hour />
+          <Min />
+          <Sec />
         </div>
       </div>
     );
