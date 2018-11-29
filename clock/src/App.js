@@ -40,13 +40,12 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.seconds);
     return (
       <div className="clock">
         <div className="clock-face">
-          <Hour hour={this.state.hours} />
-          <Min min={this.state.minutes} />
-          <Sec sec={this.state.seconds} />
+          <Hour hours={this.state.hoursDegrees} />
+          <Min minutes={this.state.minutesDegrees} />
+          <Sec seconds={this.state.secondsDegrees} />
         </div>
       </div>
     );
