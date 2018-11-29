@@ -27,9 +27,9 @@ class App extends Component {
           hours: this.state.time.getHours(),
           minutes: this.state.time.getMinutes(),
           seconds: this.state.time.getSeconds(),
-          secondsDegrees: (this.state.seconds / 60) * 360 + 90,
+          hoursDegrees: (this.state.hours / 12) * 360 + 90,
           minutesDegrees: (this.state.minutes / 60) * 360 + 90,
-          hoursDegrees: (this.state.hours / 12) * 360 + 90
+          secondsDegrees: (this.state.seconds / 60) * 360 + 90
         }),
       1000
     );
@@ -40,6 +40,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.minutes, this.state.seconds);
     return (
       <div className="clock">
         <div className="clock-face">

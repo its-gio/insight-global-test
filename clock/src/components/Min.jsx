@@ -4,7 +4,7 @@ class Min extends Component {
   render() {
     let style;
 
-    if (this.props.minutes == 0) {
+    if (this.props.minutes === 0) {
       style = {
         transition: `none`
       };

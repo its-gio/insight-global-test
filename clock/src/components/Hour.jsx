@@ -4,7 +4,7 @@ class Hour extends Component {
   render() {
     let style;
 
-    if (this.props.hours == 0) {
+    if (this.props.hours === 0) {
       style = {
         transition: `none`
       };

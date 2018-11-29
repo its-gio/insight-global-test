@@ -4,7 +4,7 @@ class Sec extends Component {
   render() {
     let style;
 
-    if (this.props.seconds == 0) {
+    if (this.props.seconds === 0) {
       style = {
         transition: `none`
       };
