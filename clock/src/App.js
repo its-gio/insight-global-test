@@ -43,9 +43,15 @@ class App extends Component {
     return (
       <div className="clock">
         <div className="clock-face">
-          <Hour hours={this.state.hoursDegrees} />
-          <Min minutes={this.state.minutesDegrees} />
-          <Sec seconds={this.state.secondsDegrees} />
+          <Hour hoursDeg={this.state.hoursDegrees} hours={this.state.hours} />
+          <Min
+            minutesDeg={this.state.minutesDegrees}
+            minutes={this.props.minutes}
+          />
+          <Sec
+            secondsDeg={this.state.secondsDegrees}
+            seconds={this.state.seconds}
+          />
         </div>
       </div>
     );
