@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class Hour extends Component {
   render() {
-    return <div className="hand hour-hand" />;
+    let style = {
+      transform: `rotate(${this.props.hours}deg)`
+    };
+
+    return <div style={style} className="hand hour-hand" />;
   }
 }
 

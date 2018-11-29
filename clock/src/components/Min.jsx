@@ -2,12 +2,11 @@ import React, { Component } from "react";
 
 class Min extends Component {
   render() {
-    return (
-      <div
-        // style={{ transdform: rotate(${}deg) }}
-        className="hand min-hand"
-      />
-    );
+    let style = {
+      transform: `rotate(${this.props.minutes}deg)`
+    };
+
+    return <div style={style} className="hand min-hand" />;
   }
 }
 
